@@ -1,0 +1,73 @@
+body {
+    background: #147;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+}
+
+#wrapper img {
+    width: 90%;
+    height: auto;
+    margin: 0% 5% 5% 5%;
+}
+
+.instruction {
+    font-size: 1.2rem;
+    padding: 20px 5% 20px 5%;
+    width: 90%;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#wrapper code {
+    font-family:"Lucida Console",monaco,"Courier New",monospace;
+    font-size:1rem;text-align:center;
+}
+
+#wrapper h1 {
+    text-align: center;
+    font-size: 1.73rem;
+}
+
+@media screen and (min-width: 900px) {
+    #wrapper {
+        width: 90%;
+    }
+}
+
+.columns {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#wrapper code {
+    grid-column: 1/-1;
+}
+
+@media screen and (min-width: 1200px) {
+    #wrapper {
+        width: 90%;
+    }
+}
+
+.columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#wrapper code {
+    grid-column:auto;
+    align-self:center;
+}
